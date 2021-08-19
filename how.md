@@ -20,3 +20,7 @@ plugins: [
     }]
 ]
 ```
+
+## lodash
+
+npm i lodash
