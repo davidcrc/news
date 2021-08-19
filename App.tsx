@@ -12,7 +12,7 @@ const App: React.FunctionComponent<AppProps> = props => {
 
   const getNews = async () => {
     const response = await getNewsApi();
-    console.log('data', response);
+    // console.log('data', response);
     setNews(response);
   };
 
@@ -25,7 +25,7 @@ const App: React.FunctionComponent<AppProps> = props => {
       <Text style={styles.title}>Ultimas Noticias</Text>
       <ScrollView style={styles.scrollView}>
         {map(news, (noticia, index) => (
-          <New noticia={noticia} />
+          <New key={index} noticia={noticia} />
         ))}
       </ScrollView>
     </SafeAreaView>

@@ -31,3 +31,6 @@ npm i moment
 ## url parse
 npm i @types/url-parse
 npm i url-parse
+
+## Open in integrated browser - https://www.npmjs.com/package/react-native-inappbrowser-reborn
+npm i react-native-inappbrowser-reborn

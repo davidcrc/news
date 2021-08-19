@@ -19,6 +19,7 @@
     "react": "17.0.1",
     "react-native": "0.64.1",
     "react-native-dotenv": "^3.2.0",
+    "react-native-inappbrowser-reborn": "^3.6.3",
     "url-parse": "^1.5.3"
   },
   "devDependencies": {
