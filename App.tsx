@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { StyleSheet, ScrollView, SafeAreaView, Text } from 'react-native';
+import { getNewsApi } from './src/api/news';
 
 interface AppProps {}
 
 const App: React.FunctionComponent<AppProps> = props => {
+  const [news, setNews] = useState(null);
+
+  const getNews = async () => {
+    const response = await getNewsApi();
+    console.log('data', response);
+  };
+
+  useEffect(() => {
+    getNews();
+  }, []);
+
   return (
     <SafeAreaView>
       <Text style={styles.title}>Ultimas Noticias</Text>
@@ -23,7 +35,5 @@ const styles = StyleSheet.create({
     fontSize: 25,
     paddingVertical: 10,
   },
-  scrollView: {
-
-  }
+  scrollView: {},
 });
