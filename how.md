@@ -22,5 +22,12 @@ plugins: [
 ```
 
 ## lodash
-
+npm i @types/lodash
 npm i lodash
+
+## moment
+npm i moment
+
+## url parse
+npm i @types/url-parse
+npm i url-parse

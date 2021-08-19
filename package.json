@@ -12,11 +12,14 @@
   "dependencies": {
     "@types/lodash": "^4.14.172",
     "@types/react-native-dotenv": "^0.2.0",
+    "@types/url-parse": "^1.4.4",
     "event-target-shim": "^6.0.2",
     "lodash": "^4.17.21",
+    "moment": "^2.29.1",
     "react": "17.0.1",
     "react-native": "0.64.1",
-    "react-native-dotenv": "^3.2.0"
+    "react-native-dotenv": "^3.2.0",
+    "url-parse": "^1.5.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
